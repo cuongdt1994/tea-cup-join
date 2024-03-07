@@ -1,0 +1,36 @@
+{
+  "name": "tea-cup-join",
+  "version": "2.2.5",
+  "description": "Put some TEA in your React.",
+  "author": "John <a@kb.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "https",
+    "url": "https://github.com/cuongdt1994/tea-cup-join.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "tsc-v": "tsc -v",
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "prettify": "prettier --write .",
+    "tsc": "tsc",
+    "compile:ts": "tsc",
+    "compile": "rimraf dist && tsc",
+    "samples": "tsc --outFile ./dist/Samples/index.js && cp ./src/Samples/index.html ./dist/Samples"
+  },
+  "dependencies": {
+    "tea-cup-join": "^1.5.2",
+    "react": "^16.7.0"
+  },
+  "peerDependencies": {
+    "react": "^16.7.0 || ^17.0.1",
+    "tea-cup-core": "2.2.3"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^16.2.5",
+    "@types/react": "^16.7.22",
+    "jsdom": "^16.5.0"
+  }
+}
